@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 * {
   font-family: "Nunito", sans-serif;
@@ -163,10 +164,101 @@ h1 {
   font-size: 4rem;
 }
 
+.home {
+  padding: 0 3%;
+  margin-top: 11rem;
+  background: #F8F2FC;
+}
+.home .slide {
+  min-height: 100vh;
+  background-size: cover !important;
+  background-position: 0 63% !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.home .slide .content {
+  width: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home .slide .content .p-logo {
+  margin: 2rem 0;
+}
+.home .slide .content h3 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  display: block;
+  font-weight: 500;
+  font-weight: 600;
+}
+.home .slide .content hr {
+  border: 1px solid #ffffff; /* Grosor y estilo del borde */
+  margin: 2rem auto; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+  background-color: #ffffff; /* Color de fondo de la línea */
+  height: 0.1rem; /* Altura de la línea */
+  width: 35%; /* Modifica el largo de la línea horizontal */
+}
+.home .slide .content .p-servicios {
+  font-size: 2.2rem;
+  width: 100%;
+}
+.home .slide .content p {
+  color: #ffffff;
+  font-size: 3.5rem;
+  margin-top: 4rem;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  background: rgba(0, 4, 255, 0.401);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ffffff;
+  font-weight: 500;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: rgba(1, 3, 122, 0.587);
+  border: 1px solid #ffffff;
+}
+
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  background: rgb(108, 108, 108);
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
     scroll-padding: 7rem;
+  }
+}
+@media (max-width: 900px) {
+  .home .slide .content {
+    top: 45%;
+  }
+  .home .btn {
+    top: 90%;
   }
 }
 @media (max-width: 800px) {
@@ -243,6 +335,18 @@ h1 {
   .contactos .datos-contactos .contacto {
     margin-top: 2rem;
   }
+  .home {
+    padding: 0;
+  }
+  .home .slide .content {
+    width: 70%;
+  }
+  .home .slide .content p {
+    font-size: 3.2rem;
+  }
+  .home .slide .content h3 {
+    font-size: 3.2rem;
+  }
 }
 @media (max-width: 680px) {
   .nav-superior {
@@ -260,6 +364,18 @@ h1 {
   .menu .menu__container .menu__links {
     top: 110px;
   }
+  .home .slide .content {
+    width: 90%;
+  }
+  .home .slide .content p {
+    font-size: 2.8rem;
+  }
+  .home .slide .content h3 {
+    font-size: 2.8rem;
+  }
+  .home .slide .btn {
+    top: 80%;
+  }
 }
 @media (max-width: 450px) {
   html {
@@ -270,5 +386,8 @@ h1 {
   }
   .menu .menu__container .menu__links {
     top: 100px;
+  }
+  .home .slide .content {
+    top: 35%;
   }
 }/*# sourceMappingURL=estilos.css.map */

@@ -179,6 +179,101 @@ h1{
     font-size: 4rem;
 }
 
+//slider
+.home{
+    padding: 0 3%;
+    margin-top: 11rem;
+    background: #F8F2FC;
+
+    .slide{
+        min-height: 100vh;
+        background-size: cover !important; //se centra "casi" imagen
+        background-position: 0 63% !important; // busca el centro de la imagen "abdomen"
+        padding: 0 ;  // se mueve texto
+        display: flex;       // centra el texto en pantalla "abdomen" 
+        align-items: center; // centra el texto en pantalla "abdomen"
+
+        .content{
+            width: 50%;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            .p-logo{
+                margin: 2rem 0;
+            }
+
+            h3{ 
+                // text-align: center;
+                font-size: 3.5rem;
+                color: #ffffff;
+                display: block;
+                font-weight: 500;
+                // letter-spacing: 0.5rem;
+                font-weight: 600;
+            }
+
+            hr{
+                border: 1px solid #ffffff; /* Grosor y estilo del borde */
+                margin: 2rem auto; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+                background-color: #ffffff; /* Color de fondo de la línea */
+                height: .1rem; /* Altura de la línea */
+                width: 35%; /* Modifica el largo de la línea horizontal */
+            }
+
+            .p-servicios{
+                font-size: 2.2rem;
+                width: 100%;
+            }
+
+            p{
+                color: #ffffff;
+                font-size: 3.5rem;
+                margin-top: 4rem;
+            }
+        }
+    }
+}  
+
+.btn{
+    padding: 1rem 4rem;
+    background: rgba(0, 4, 255, 0.401);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ffffff;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    // margin: 2rem 0;
+
+    &:hover{
+      background: rgba(1, 3, 122, 0.587);
+      border: 1px solid #ffffff;
+    }
+  }
+
+.swiper-pagination-bullet{
+    height: 2rem;
+    width: 2rem;
+    background: rgb(108, 108, 108);
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    &.swiper-pagination-bullet-active{
+        background: $blanco;
+      }
+}
+
 
 
 
@@ -191,6 +286,16 @@ h1{
         font-size: 55%;
         scroll-padding: 7rem;
       }
+}
+
+@media (max-width:900px){
+    .home .slide .content{
+        top: 45%;
+    }
+
+    .home .btn{
+        top: 90%;
+    }
 }
 
 @media (max-width:800px) {
@@ -285,6 +390,22 @@ h1{
             margin-top: 2rem;
         }
     }
+
+    .home{
+        padding: 0;
+    }
+
+    .home .slide .content{
+        width: 70%;
+
+        p{
+            font-size: 3.2rem;
+        }
+
+        h3{
+            font-size: 3.2rem;
+        }
+    }
 }
 
 @media (max-width:680px){
@@ -306,6 +427,22 @@ h1{
     .menu .menu__container .menu__links{
         top: 110px;
     }
+
+    .home .slide .content{
+        width: 90%;
+
+        p{
+            font-size: 2.8rem;
+        }
+
+        h3{
+            font-size: 2.8rem;
+        }
+    }
+
+    .home .slide .btn{
+        top: 80%;
+    }
 }
 
 @media (max-width:450px){
@@ -322,6 +459,10 @@ h1{
 
     .menu .menu__container .menu__links{
         top: 100px;
+    }
+
+    .home .slide .content{
+        top: 35%;
     }
   
   }
