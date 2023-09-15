@@ -252,6 +252,10 @@ h1 {
     font-size: 55%;
     scroll-padding: 7rem;
   }
+  .swiper-slide img {
+    width: 25rem;
+    height: 25rem;
+  }
 }
 @media (max-width: 900px) {
   .home .slide .content {
