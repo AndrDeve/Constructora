@@ -394,4 +394,7 @@ h1 {
   .home .slide .content {
     top: 35%;
   }
+  .home .slide {
+    min-height: 80vh;
+  }
 }/*# sourceMappingURL=estilos.css.map */
