@@ -372,13 +372,15 @@ h1 {
     width: 90%;
   }
   .home .slide .content p {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   .home .slide .content h3 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   .home .slide .btn {
     top: 80%;
+    padding: 2rem 4rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 450px) {
