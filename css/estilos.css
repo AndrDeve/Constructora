@@ -8,7 +8,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize; /*empezar la primera letra de la palabra en mayuscula */
   transition: all 0.2s linear; /* transicion de los hover, tambien para la transicion en responsivo */
 }
 
