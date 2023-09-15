@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  text-transform: capitalize; /*empezar la primera letra de la palabra en mayuscula */
+  transition: all .2s linear; /* transicion de los hover, tambien para la transicion en responsivo */
+}
+
+// variables colores
+$azul:#001D84;
+$negro:#000000;
+$blanco:#ffffff;
+$blanco-gris:#F5F6F6;
+
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar{ // grosor"
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track{ // color de fondo del scroll
+    background: $negro;
+  }
+
+  &::-webkit-scrollbar-thumb{ // color barra scroll
+    background: $azul;
+  }
+}
+
+h1{
+    font-size: 5rem;
+}
+
+//nav superior
+.nav-superior{
+    display: flex;
+    justify-content: space-between;
+    background: $negro;
+    padding: 1rem 3%;
+    color: $blanco;
+    font-size: 1.5rem;
+
+    .redes-sociales{
+        display: flex;
+        
+        p{
+            padding-right:2rem ;
+        }
+
+        a{
+            color: $blanco;
+            font-size: 1.8rem;
+            letter-spacing: .5rem;
+        }
+    }
+
+    .informacion-contactos{
+        letter-spacing: .1rem;
+    }
+}
+
+//menu
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4000;
+    background-color: $azul;
+    border-bottom: 1px solid $blanco;
+}
+
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 10000;
+    padding: 2rem 0;
+
+    .logo{
+        color: $blanco;
+        font-size: 2.7rem;
+        letter-spacing: .1rem;
+    }
+}
+
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    font-size: 1.8rem;
+    z-index: 10000;
+}
+
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0); /* con este se esconde */
+    --transform: rotate(0deg);
+}
+
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* con este mostramos el submenu*/
+    --transform: rotate(90deg); 
+}
+
+
+.menu__link{
+     color: $blanco;
+     background: $azul;
+     text-decoration: none;
+     padding: 0 20px 0 20px;
+     display: flex;
+     height: 100%;
+     align-items: center;
+
+     &:hover{
+        transform: scale(1.05);
+     }
+}
+
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 1px;
+    font-size: 2.5rem;
+}
+
+.menu__nesting{
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip); /* escondemos el submenu, ul dentro de li */
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    width: max-content;
+    transform: translateY(100%);
+    background: #ffffff;
+}
+
+.menu__link--inside{
+    padding: 13px 70px 13px 20px;
+    font-size: 1.7rem;
+}
+
+.menu__link--inside:hover{
+    background-color: #031246;
+    color: $blanco;
+}
+
+
+
+.menu__container .menu__hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+// media queries
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+        scroll-padding: 7rem;
+      }
+}
+
+@media (max-width:800px) {
+    header .menu .menu__container{
+        width: 100%;
+        max-width: 1200px;
+        padding: 1.8rem 3rem;
+    }
+
+    .menu__container .menu__hamburguer{
+        display: flex;
+        color: $blanco;
+
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow: hidden;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0); /* rotamos la flecha en responsivo*/
+        --background: #5e7094;
+    }
+
+    // .menu__item--show{
+    //     background-color: $rosado;
+    // }
+
+    .menu__links{
+        z-index: 10000;
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        background-color: $azul;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%); /*mostrar ocultar menu hamburgueesa*/
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset; /* lo regresa a su valor original, ya no esta posicionado absolutamente a su padre */
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+        background: $azul;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: 3rem;
+        border-left: 1px solid rgb(255, 255, 255);
+        // background: rgb(246, 246, 213);
+        // border-bottom: 1px solid $dorado;
+        font-size: 1.8rem;
+        text-decoration: underline;
+        background: #001b7a;
+    }
+
+    .contactos .datos-contactos{
+        padding: 2rem 6%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .contacto{
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width:680px){
+    .nav-superior{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu .menu__container{
+        padding: 1.8rem 3rem;
+    }
+
+    .menu__links{
+        top: 110px;
+    }
+}
+
+@media (max-width:500px){
+    .menu .menu__container .menu__links{
+        top: 110px;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+      font-size: 50%;
+    }
+
+    .nav-superior .informacion-contactos{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+    .menu .menu__container .menu__links{
+        top: 100px;
+    }
+  
+  }
