@@ -246,6 +246,58 @@ h1 {
   background: #ffffff;
 }
 
+.container-sobre-nosotros .sobre-nosotros-fondo {
+  background: #001D84;
+  height: 15rem;
+  position: relative;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3% 0rem 3%;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros img {
+  height: 50rem;
+  width: 50rem;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos {
+  height: 50rem;
+  width: 50rem;
+  background: #ffffff;
+  border: 1px solid #001D84;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos .titulo-quienes-somos {
+  color: #000000;
+  font-weight: 600;
+  font-size: 3rem;
+  padding: 5rem 4% 2rem 4%;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos hr {
+  border: 1px solid #001D84; /* Grosor y estilo del borde */
+  margin: 1rem 4%; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+  background-color: #001D84; /* Color de fondo de la línea */
+  height: 0.1rem; /* Altura de la línea */
+  width: 35%; /* Modifica el largo de la línea horizontal */
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos .texto-quienes-somos {
+  padding: 4%;
+  font-size: 1.6rem;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos .ver-mas {
+  margin: 2rem 4%;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos a {
+  padding: 1rem 3.5rem;
+  border: 1px solid #ffffff;
+  background-color: #001D84;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos a:hover {
+  font-size: 1.6rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -254,6 +306,17 @@ h1 {
   .swiper-slide img {
     width: 25rem;
     height: 25rem;
+  }
+}
+@media (max-width: 950px) {
+  .container-sobre-nosotros .sobre-nosotros {
+    flex-direction: column;
+  }
+  .container-sobre-nosotros .sobre-nosotros img {
+    display: none;
+  }
+  .container-sobre-nosotros .sobre-nosotros .quienes-somos {
+    margin: 0 auto;
   }
 }
 @media (max-width: 900px) {

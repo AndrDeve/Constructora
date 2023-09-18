@@ -274,6 +274,69 @@ h1{
       }
 }
 
+//sobre nosotros
+.container-sobre-nosotros .sobre-nosotros-fondo{
+    background: $azul;
+    height: 15rem;
+    position: relative;
+
+    .sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+        padding: 6rem 3% 0rem 3%;
+
+        img{
+            height: 50rem;
+            width: 50rem;
+        }
+
+        .quienes-somos{
+            height: 50rem;
+            width: 50rem;
+            background: $blanco;
+            border: 1px solid $azul;
+
+            .titulo-quienes-somos{
+                color: $negro;
+                font-weight: 600;
+                font-size: 3rem;
+                padding:5rem 4% 2rem 4%;
+            }
+
+            hr{
+                border: 1px solid $azul; /* Grosor y estilo del borde */
+                margin: 1rem 4% ; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+                background-color: $azul; /* Color de fondo de la línea */
+                height: .1rem; /* Altura de la línea */
+                width: 35%; /* Modifica el largo de la línea horizontal */
+            }
+
+            .texto-quienes-somos{
+                padding: 4%;
+                font-size: 1.6rem;
+            }
+
+            .ver-mas{
+                margin: 2rem 4%;
+            }
+
+            a{  
+                padding: 1rem 3.5rem;
+                border: 1px solid $blanco;
+                background-color: $azul;
+                color: $blanco;
+                font-size: 1.5rem;
+                border-radius: 5px;
+
+                &:hover{
+                   font-size: 1.6rem;
+                }
+            }
+
+        }
+    }
+}
+
 
 
 
@@ -291,6 +354,20 @@ h1{
         width: 25rem;
         height: 25rem;
       }   
+}
+
+@media (max-width:950px){
+    .container-sobre-nosotros .sobre-nosotros{
+        flex-direction: column;
+
+        img{
+          display: none;
+        }
+
+        .quienes-somos{
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width:900px){
