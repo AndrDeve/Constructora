@@ -260,14 +260,14 @@ h1 {
 .container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros img {
   height: 50rem;
   width: 50rem;
-  box-shadow: -5px -8px 5px #001D84; /* Propiedad de sombra en la parte superior */
+  box-shadow: -4px -7px 6px #001D84; /* Propiedad de sombra en la parte superior */
 }
 .container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos {
   height: 50rem;
   width: 50rem;
   background: #ffffff;
   border: 1px solid #001D84;
-  box-shadow: -5px -8px 5px #001D84; /* Propiedad de sombra en la parte superior */
+  box-shadow: -4px -7px 6px #001D84; /* Propiedad de sombra en la parte superior */
 }
 .container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos .titulo-quienes-somos {
   color: #000000;
