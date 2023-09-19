@@ -186,7 +186,7 @@ h1{
     background: #F8F2FC;
 
     .swiper{
-        box-shadow: 0px 5px 5px $azul; /* Propiedad de sombra en la parte inferior */
+        box-shadow: 0px 2px 5px $azul; /* Propiedad de sombra en la parte inferior */
     }
 
     .slide{
@@ -292,7 +292,7 @@ h1{
         img{
             height: 50rem;
             width: 50rem;
-            box-shadow: 0px -10px 5px $azul; /* Propiedad de sombra en la parte superior */
+            box-shadow: -5px -8px 5px $azul; /* Propiedad de sombra en la parte superior */
         }
 
         .quienes-somos{
@@ -300,7 +300,7 @@ h1{
             width: 50rem;
             background: $blanco;
             border: 1px solid $azul;
-            box-shadow: 0px -8px 5px $azul; /* Propiedad de sombra en la parte superior */
+            box-shadow: -5px -8px 5px $azul; /* Propiedad de sombra en la parte superior */
 
             .titulo-quienes-somos{
                 color: $negro;
