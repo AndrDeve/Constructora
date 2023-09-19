@@ -276,9 +276,7 @@ h1{
 
 //sobre nosotros
 .container-sobre-nosotros .sobre-nosotros-fondo{
-    background: $azul;
-    height: 15rem;
-    position: relative;
+    background: $blanco-gris;
 
 
     .sobre-nosotros{
@@ -336,6 +334,44 @@ h1{
 
         }
     }
+}
+
+//nuestros servicios
+section .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.read-more {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hidden-cards {
+    display: none;
 }
 
 

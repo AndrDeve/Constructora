@@ -247,9 +247,7 @@ h1 {
 }
 
 .container-sobre-nosotros .sobre-nosotros-fondo {
-  background: #001D84;
-  height: 15rem;
-  position: relative;
+  background: #F5F6F6;
 }
 .container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros {
   display: flex;
@@ -296,6 +294,43 @@ h1 {
 }
 .container-sobre-nosotros .sobre-nosotros-fondo .sobre-nosotros .quienes-somos a:hover {
   font-size: 1.6rem;
+}
+
+section .card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.read-more {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.hidden-cards {
+  display: none;
 }
 
 @media (max-width: 991px) {
