@@ -71,7 +71,7 @@ showMoreButton.addEventListener('click', () => {
         showMoreButton.innerText = '▲';
     } else {
         hiddenCards.style.display = 'none';
-        showMoreButton.innerText = 'Ver Más';
+        showMoreButton.innerText = 'Ver Más ▼';
     }
 });
 
