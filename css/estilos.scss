@@ -83,12 +83,10 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     z-index: 10000;
-    padding: 2rem 0;
+    padding: 2rem 3%;
 
     .logo{
         color: $blanco;
@@ -344,30 +342,47 @@ h1{
 }
 
 //nuestros servicios
-section .card-container {
+.card-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 1rem 2%;
+    background: $blanco-gris;
 }
 
 .card {
     width: 30%;
-    border: 1px solid #ccc;
+    border: 1px solid $azul;
     padding: 20px;
     margin: 10px;
-    text-align: center;
+    background: $blanco;
+
+    img{
+        height: 40px;
+        width: 40px;
+    }
+
+    p{
+        font-size: 1.6rem;
+        margin: 1.5rem 0;
+    }
 }
 
 .card h2 {
+    font-size: 2.5rem;
     margin: 10px 0;
 }
 
 .read-more {
-    background-color: #007bff;
+    background-color: $azul;
     color: #fff;
-    border: none;
+    border-radius: .3rem;
     padding: 5px 10px;
     cursor: pointer;
+    font-size: 1.5rem;
+
+    &:hover{
+        font-size: 1.6rem;
+    }
 }
 
 .arrow {
@@ -380,6 +395,7 @@ section .card-container {
 .hidden-cards {
     display: none;
 }
+
 
 
 
@@ -421,6 +437,16 @@ section .card-container {
 
     .home .btn{
         top: 90%;
+    }
+
+    .card-container{
+        flex-direction: column;
+
+        .card{
+            justify-content: center;
+            margin: 2rem auto;
+            width: 70%;
+        }
     }
 }
 
@@ -547,6 +573,10 @@ section .card-container {
     .menu__links{
         top: 110px;
     }
+
+    .card-container .card{
+        width: 80%;
+    }
 }
 
 @media (max-width:500px){
@@ -579,6 +609,10 @@ section .card-container {
         .titulo-quienes-somos{
             font-size: 2.8rem;
         }
+    }
+
+    .card-container .card{
+        width: 90%;
     }
 }
 

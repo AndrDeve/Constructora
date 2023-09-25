@@ -59,4 +59,20 @@
     menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
 })();
 
+
+//tarjetas nuestros servicios
+const showMoreButton = document.getElementById('showMore');
+const hiddenCards = document.getElementById('hiddenCards');
+
+showMoreButton.addEventListener('click', () => {
+    if (hiddenCards.style.display === 'none') {
+        hiddenCards.style.display = 'flex';
+        showMoreButton.innerText = '▲';
+    } else {
+        hiddenCards.style.display = 'none';
+        showMoreButton.innerText = '▼';
+    }
+});
+
+
         
