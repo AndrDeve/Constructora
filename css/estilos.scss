@@ -347,7 +347,7 @@ h1{
     color: $blanco;
     font-size: 2rem;
     text-align: center;
-    margin: 4rem 4% 1rem 4%;
+    margin: 4rem 3% 1rem 3%;
     padding: 2rem 0;
 
     hr{
@@ -633,6 +633,10 @@ h1{
 
     .card-container .card{
         width: 95%;
+    }
+
+    .titulo-servicios{
+        margin: 4rem 4% 1rem 4%;
     }
 }
 
