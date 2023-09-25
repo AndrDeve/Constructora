@@ -60,6 +60,7 @@
 })();
 
 
+
 //tarjetas nuestros servicios
 const showMoreButton = document.getElementById('showMore');
 const hiddenCards = document.getElementById('hiddenCards');
@@ -70,7 +71,7 @@ showMoreButton.addEventListener('click', () => {
         showMoreButton.innerText = '▲';
     } else {
         hiddenCards.style.display = 'none';
-        showMoreButton.innerText = '▼';
+        showMoreButton.innerText = 'Ver Más';
     }
 });
 
