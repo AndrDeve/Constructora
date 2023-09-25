@@ -299,6 +299,22 @@ h1 {
   font-size: 1.6rem;
 }
 
+.titulo-servicios {
+  background: #001D84;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem 3% 2rem 3%;
+  padding: 2rem 0;
+}
+.titulo-servicios hr {
+  border: 1px solid #ffffff; /* Grosor y estilo del borde */
+  margin: 1rem auto; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+  background-color: #001D84; /* Color de fondo de la línea */
+  height: 0.1rem; /* Altura de la línea */
+  width: 15%; /* Modifica el largo de la línea horizontal */
+}
+
 .card-container {
   display: flex;
   justify-content: space-between;

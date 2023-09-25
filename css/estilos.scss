@@ -342,6 +342,23 @@ h1{
 }
 
 //nuestros servicios
+.titulo-servicios{
+    background: $azul;
+    color: $blanco;
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem 3% 2rem 3%;
+    padding: 2rem 0;
+
+    hr{
+        border: 1px solid $blanco; /* Grosor y estilo del borde */
+        margin: 1rem auto ; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+        background-color: $azul; /* Color de fondo de la línea */
+        height: .1rem; /* Altura de la línea */
+        width: 15%; /* Modifica el largo de la línea horizontal */
+    }
+}
+
 .card-container {
     display: flex;
     justify-content: space-between;
