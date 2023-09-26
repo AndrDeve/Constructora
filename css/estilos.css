@@ -371,6 +371,7 @@ h1 {
 
 .fondo-azul {
   position: relative;
+  width: 100vw;
 }
 .fondo-azul img {
   width: 100%;
