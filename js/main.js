@@ -88,7 +88,7 @@ window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
 
   // Define la posición del scroll en la que deseas que comience el contador
-  const scrollStart = 600; // Cambia esto según tus necesidades
+  const scrollStart = 1200; // Cambia esto según tus necesidades
 
   // Comienza el contador cuando se alcanza la posición de inicio
   if (scrollPosition >= scrollStart && !isCounting) {
@@ -101,7 +101,7 @@ function increaseCounter() {
   if (counter < 120) {
     counter++;
     document.getElementById("counter1").textContent = counter;
-    setTimeout(increaseCounter, 50); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
+    setTimeout(increaseCounter, 70); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
   }
 }
 
@@ -116,7 +116,7 @@ window.addEventListener("scroll", () => {
   const scrollPosition2 = window.scrollY;
 
   // Define la posición del scroll en la que deseas que comience el contador
-  const scrollStart2 = 600; // Cambia esto según tus necesidades
+  const scrollStart2 = 1200; // Cambia esto según tus necesidades
 
   // Comienza el contador cuando se alcanza la posición de inicio
   if (scrollPosition2 >= scrollStart2 && !isCounting2) {
@@ -129,7 +129,7 @@ function increaseCounter2() {
   if (counter2 < 63) {
     counter2++;
     document.getElementById("counter2").textContent = counter2;
-    setTimeout(increaseCounter2, 50); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
+    setTimeout(increaseCounter2, 70); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
   }
 }
 
@@ -143,7 +143,7 @@ window.addEventListener("scroll", () => {
   const scrollPosition3 = window.scrollY;
 
   // Define la posición del scroll en la que deseas que comience el contador
-  const scrollStart3 = 600; // Cambia esto según tus necesidades
+  const scrollStart3 = 1200; // Cambia esto según tus necesidades
 
   // Comienza el contador cuando se alcanza la posición de inicio
   if (scrollPosition3 >= scrollStart3 && !isCounting3) {
@@ -156,6 +156,6 @@ function increaseCounter3() {
   if (counter3 < 36) {
     counter3++;
     document.getElementById("counter3").textContent = counter3;
-    setTimeout(increaseCounter3, 50); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
+    setTimeout(increaseCounter3, 70); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
   }
 }

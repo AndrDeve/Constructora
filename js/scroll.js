@@ -8,10 +8,10 @@ window.sr = ScrollReveal();
         distance: '20px'
     });
 
-    // window.sr = ScrollReveal();
+    window.sr = ScrollReveal();
 
-    // sr.reveal('.scroll-buttom' , {
-    //     duration: 2500,
-    //     origin: 'buttom',
-    //     distance: '20px'
-    // });
+    sr.reveal('.scroll-left' , {
+        duration: 2500,
+        origin: 'left',
+        distance: '20px'
+    });
