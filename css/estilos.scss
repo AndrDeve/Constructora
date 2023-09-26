@@ -290,15 +290,15 @@ h1{
         img{
             height: 50rem;
             width: 50rem;
-            box-shadow: -2px -2px 6px $azul; /* Propiedad de sombra en la parte superior */
+            box-shadow: -1px -1px 6px $azul; /* Propiedad de sombra en la parte superior */
         }
 
         .quienes-somos{
             height: 50rem;
             width: 50rem;
             background: $blanco;
-            border: 1px solid $azul;
-            box-shadow: -2px -2px 6px $azul; /* Propiedad de sombra en la parte superior */
+            // border: 1px solid $azul;
+            box-shadow: -1px -1px 6px $azul; /* Propiedad de sombra en la parte superior */
 
             .titulo-quienes-somos{
                 color: $negro;
