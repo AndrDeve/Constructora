@@ -98,7 +98,7 @@ window.addEventListener("scroll", () => {
 });
 
 function increaseCounter() {
-  if (counter < 120) {
+  if (counter < 136) {
     counter++;
     document.getElementById("counter1").textContent = counter;
     setTimeout(increaseCounter, 70); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
@@ -126,7 +126,7 @@ window.addEventListener("scroll", () => {
 });
 
 function increaseCounter2() {
-  if (counter2 < 63) {
+  if (counter2 < 112) {
     counter2++;
     document.getElementById("counter2").textContent = counter2;
     setTimeout(increaseCounter2, 70); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
@@ -153,7 +153,7 @@ window.addEventListener("scroll", () => {
 });
 
 function increaseCounter3() {
-  if (counter3 < 36) {
+  if (counter3 < 69) {
     counter3++;
     document.getElementById("counter3").textContent = counter3;
     setTimeout(increaseCounter3, 70); // Aumenta cada 100 milisegundos (ajusta según tu preferencia)
