@@ -605,6 +605,10 @@ h1{
             font-size: 3.2rem;
         }
     }
+
+    .fondo-azul .textos{
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:680px){
@@ -623,6 +627,10 @@ h1{
 
     .card-container .card{
         width: 80%;
+    }
+
+    .fondo-azul .textos{
+        font-size: 1.8rem;
     }
 }
 
@@ -664,6 +672,14 @@ h1{
 
     .titulo-servicios{
         margin: 4rem 4% 1rem 4%;
+    }
+
+    .fondo-azul img{
+        height: 14rem;
+    }
+
+    .fondo-azul .textos{
+        font-size: 1.6rem;
     }
 }
 
