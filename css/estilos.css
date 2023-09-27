@@ -397,6 +397,63 @@ h1 {
   display: flex;
 }
 
+.titulo-proyectos {
+  background: #001D84;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.8rem 3% 1rem 3%;
+  padding: 2rem 0;
+}
+.titulo-proyectos hr {
+  border: 1px solid #ffffff; /* Grosor y estilo del borde */
+  margin: 1rem auto; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+  background-color: #001D84; /* Color de fondo de la línea */
+  height: 0.1rem; /* Altura de la línea */
+  width: 15%; /* Modifica el largo de la línea horizontal */
+}
+
+.container-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3%;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+.container .item-container {
+  position: relative;
+  overflow: hidden;
+}
+.container .item-container img {
+  height: 40rem;
+  width: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .item-container a {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  background: rgba(33, 32, 32, 0.5);
+  font-size: 2.2rem;
+  font-weight: bolder;
+  height: 100%;
+  width: 100%;
+  padding: 3rem 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .item-container a:hover {
+  font-size: 2.3rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -541,6 +598,14 @@ h1 {
   .fondo-azul .textos {
     font-size: 1.8rem;
   }
+  .container-items {
+    display: flex;
+    justify-content: center;
+  }
+  .container-items .container .item-container img {
+    height: 30rem;
+    width: 50rem;
+  }
 }
 @media (max-width: 500px) {
   .menu .menu__container .menu__links {
@@ -572,6 +637,9 @@ h1 {
   }
   .titulo-servicios {
     margin: 4rem 4% 1rem 4%;
+  }
+  .titulo-proyectos {
+    margin: 1.5rem 3% 1rem 3%;
   }
   .fondo-azul img {
     height: 14rem;
