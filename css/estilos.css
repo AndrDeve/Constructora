@@ -454,6 +454,41 @@ h1 {
   font-size: 2.3rem;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 10rem;
+}
+.video-container video {
+  width: 100%;
+  height: 33rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(40%);
+}
+.video-container .texto-overlay {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(12, 26, 98, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.video-container .texto-overlay h2 {
+  font-size: 3rem;
+}
+.video-container .texto-overlay hr {
+  border: 1px solid #ffffff; /* Grosor y estilo del borde */
+  margin: 0.5rem auto; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
+  background-color: #ffffff; /* Color de fondo de la línea */
+  height: 0rem; /* Altura de la línea */
+  width: 70%; /* Modifica el largo de la línea horizontal */
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
