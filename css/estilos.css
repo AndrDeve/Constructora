@@ -682,6 +682,9 @@ h1 {
   .fondo-azul .textos {
     font-size: 1.6rem;
   }
+  .video-container .texto-overlay {
+    top: 30%;
+  }
 }
 @media (max-width: 450px) {
   html {
