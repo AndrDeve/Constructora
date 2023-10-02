@@ -466,7 +466,6 @@ h1 {
   height: 33rem;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(40%);
 }
 .video-container .texto-overlay {
   position: absolute;
@@ -682,9 +681,12 @@ h1 {
   .fondo-azul .textos {
     font-size: 1.6rem;
   }
+  .video-container {
+    padding-top: 13rem;
+  }
   .video-container .texto-overlay {
     width: 80%;
-    top: 30%;
+    top: 28%;
   }
 }
 @media (max-width: 450px) {
