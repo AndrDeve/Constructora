@@ -525,29 +525,6 @@ h1{
         height: 33rem;
         object-fit: cover;
     }
-
-    .texto-overlay {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(12, 26, 98, 0.5);
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-
-        h2{
-            font-size: 3rem;
-        }
-
-        hr{
-            border: 1px solid #ffffff; /* Grosor y estilo del borde */
-            margin: .5rem auto; /* Margen superior e inferior a 0 y margen izquierdo y derecho automáticos */
-            background-color: #ffffff; /* Color de fondo de la línea */
-            height: 0rem; /* Altura de la línea */
-            width: 70%; /* Modifica el largo de la línea horizontal */
-        }
-    }
 }
 
 
@@ -804,7 +781,7 @@ h1{
         padding-top: 13rem;
 
         video{
-            height: 23rem;
+            height: 27rem;
         }
     }
 }
