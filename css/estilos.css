@@ -684,9 +684,8 @@ h1 {
   .video-container {
     padding-top: 13rem;
   }
-  .video-container .texto-overlay {
-    width: 80%;
-    top: 28%;
+  .video-container video {
+    height: 23rem;
   }
 }
 @media (max-width: 450px) {
