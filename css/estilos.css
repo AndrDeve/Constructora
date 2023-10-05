@@ -505,6 +505,13 @@ h1 {
     width: 25rem;
     height: 25rem;
   }
+  section .container-img-texto .items-img-texto {
+    display: flex;
+    justify-content: center;
+  }
+  section .container-img-texto .items-img-texto img {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 950px) {
   .container-sobre-nosotros .sobre-nosotros {
@@ -647,6 +654,10 @@ h1 {
   .container-items .container .item-container img {
     height: 30rem;
     width: 46rem;
+  }
+  section .container-img-texto .items-img-texto img {
+    width: 40rem;
+    height: 30rem;
   }
 }
 @media (max-width: 500px) {

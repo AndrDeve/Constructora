@@ -575,6 +575,15 @@ h1{
         width: 25rem;
         height: 25rem;
       }   
+
+    section .container-img-texto .items-img-texto{
+        display: flex;
+        justify-content: center;
+
+        img{
+            margin-bottom: 3rem;
+        }
+    }
 }
 
 @media (max-width:950px){
@@ -755,6 +764,11 @@ h1{
             height: 30rem;
             width: 46rem;
         }
+    }
+
+    section .container-img-texto .items-img-texto img{
+        width: 40rem;
+        height: 30rem;
     }
 }
 
