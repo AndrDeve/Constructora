@@ -862,6 +862,10 @@ h1{
     .footer .container-footer{
         display: flex;
         flex-direction: column;
+        
+        .items-footer{
+            margin-bottom: 2rem;
+        }
     
         hr{
           width: 50%;

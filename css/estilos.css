@@ -735,6 +735,9 @@ h1 {
     display: flex;
     flex-direction: column;
   }
+  .footer .container-footer .items-footer {
+    margin-bottom: 2rem;
+  }
   .footer .container-footer hr {
     width: 50%;
   }
